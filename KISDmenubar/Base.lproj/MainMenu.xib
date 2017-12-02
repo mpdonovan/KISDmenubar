@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="KISDmenubar" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="l1z-my-lbm" customClass="StatusMenuController" customModule="KISDmenubar" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="b3d-hn-7fS" id="0Dk-ay-CcW"/>
+            </connections>
+        </customObject>
+        <menu id="b3d-hn-7fS">
+            <items>
+                <menuItem title="Show Icons" id="NLw-nv-sHS">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showIcons:" target="l1z-my-lbm" id="HOd-Ir-FGD"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Hide Icons" id="2FM-BZ-cmb">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="hideIcons:" target="l1z-my-lbm" id="X6N-Uw-boK"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="l9J-Lk-VzR"/>
+                <menuItem title="Text Display" id="rCv-bI-g10">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="textDisplay:" target="l1z-my-lbm" id="P4k-ds-tX2"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="PLL-22-kZO"/>
+                <menuItem title="Timer" id="pSk-Kp-3qf">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="timerTool:" target="l1z-my-lbm" id="0Gl-Ne-LBG"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="wB8-he-lOU"/>
+                <menuItem title="Quit" id="Esc-rs-8f4">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClickedWithSender:" target="l1z-my-lbm" id="YCB-is-gVj"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
